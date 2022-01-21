@@ -1,9 +1,10 @@
-import { useState } from "react";
+import NavBar from "../components/nav/NavBar";
 
 export default function Home() {
-  const [counter, setCounter] = useState(0);
-  return <div>
-    <h1>Welcome {counter}</h1>
-    <button onClick={()=>setCounter((prev)=>prev+1)}>+</button>
-  </div>;
+  return (
+    <div>
+      <NavBar/>
+     <h1>Welcome Home</h1>
+    </div>
+  );
 }
